@@ -7,9 +7,15 @@ frequency3 = 0
 frequency4 = 0
 frequency5 = 0
 frequency6 = 0
+frequency7 = 0
+frequency8 = 0
+frequency9 = 0
+frequency10 = 0
+frequency11 = 0
+frequency12 = 0
 
-for roll in range (6_000_000):
-  face = random.range(1,7) + random.range(1,7)
+for roll in range(6_000_000):
+  face = random.randrange(1, 7) + random.randrange(1, 7)
   
   if face == 1:
     frequency1 += 1
@@ -49,3 +55,13 @@ print(f'{9:>4}{frequency9:>13}')
 print(f'{10:>4}{frequency10:>13}')
 print(f'{11:>4}{frequency11:>13}')
 print(f'{12:>4}{frequency12:>13}')
+
+numbers = [frequency2, frequency3, frequency12]
+sum(numbers)
+print('craps is', sum(numbers))
+
+numbers2 = [frequency7, frequency11]
+sum(numbers2)
+print ('wins', sum(numbers2))
+
+#missybernskoetter
